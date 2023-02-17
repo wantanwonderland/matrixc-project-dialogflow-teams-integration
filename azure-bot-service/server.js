@@ -27,6 +27,7 @@ const ENV_FILE = path.join(__dirname, '.env');
 require('dotenv').config({ path: ENV_FILE });
 
 const app = express();
+app.use(express.json());
 
 const port = process.env.PORT;
 const listener = app.listen(port, () => {
