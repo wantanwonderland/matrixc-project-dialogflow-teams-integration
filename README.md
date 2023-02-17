@@ -39,7 +39,7 @@ The example belows shows how to integrate a Dialogflow CX Agent with Azure Bot S
 
 <br>
 
-## Next, deploy a Cloud Function Webhook on Google Cloud
+## Next, deploy a Cloud Function or Cloud Run Webhook on Google Cloud
 
 In this step, you'll deploy a serverless webhook using NodeJs & Cloud Functions on Google Cloud that will act as an integration service between Dialogflow CX and Azure Bot Service. This example demonstrates using Google Cloud Functions to deploy the webhook. Google Cloud offers other servless compute products that could be used in place of Cloud Functions depending on your specific requirements. Cloud Functions is the simplest service to get started with.
 
@@ -47,9 +47,7 @@ The next steps require a code editor and command line, as well as the [gcloud CL
 
 1. Clone this repository and navigate to the folder dialogflow-integrations/azure-bot-service.
 ```
-git clone https://github.com/GoogleCloudPlatform/dialogflow-integrations.git
-
-cd dialogflow-integrations/cx/azure-bot-service
+git clone https://github.com/wantanwonderland/matrixc-project-dialogflow-teams-integration.git
 ```
 
 2. Use a code editor to open **.env** and update the following environment variables with the values you captured above. You may need to configure your code editior to view hidden files. The **Agent Id** can be found by navigating to the Dialogflow CX console and locating the **Agent Link** for the agent you would like to link to Azure Bot Service. It will be the UUID that follows **agents** in the URL: https://dialogflow.cloud.google.com/cx/projects/your-project-id/locations/us-central1/agents/**your-agent-uuid**. Additionally, the **LOCATION** and **DIALOGFLOW_ENDPOINT** must correspond to the same region and the list of service endpoints can be found [here](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3-overview).
