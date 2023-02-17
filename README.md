@@ -60,6 +60,8 @@ git clone https://github.com/wantanwonderland/matrixc-project-dialogflow-teams-i
 
 Run the following commands to deploy the Dialogflow messaging endpoint to Cloud Functions. Enter **Y** when prompted to **Allow unathenticated invocations of new functions**. Authentication is handled inside the webhook and additional information on Security Considerations is included towards the end of this documentation.
 ```
+cd azure-bot-service
+
 SERVICE_ACCOUNT=your-gcp-service-account-email-address
 
 gcloud functions deploy dialogflow-azure-webhook \
